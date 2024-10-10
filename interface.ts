@@ -16,3 +16,31 @@ code reuse.
 that objects conform to expected structures.
 */
 
+// Interface-syntax
+
+interface person{
+    name: string;
+    age: number;
+    display(): void;
+}
+class employee implements person {
+    name: string;
+    age: number;
+
+    constructor(name: string, age: number,  public id:number) {     //manual assignment
+        this.name = name; 
+        this.age = age;
+       //here ,we used public keyword for printing extra property without declare the property in interface 
+    }
+    /*
+     constructor(public name: string, public age: number) {
+        // Properties are automatically declared and initialized
+    }
+    */
+    display() {
+        console.log(`the name is ${this.name}`);
+    }
+}
+const Employee = new employee("nithu", 90,2234); 
+Employee.display();
+
