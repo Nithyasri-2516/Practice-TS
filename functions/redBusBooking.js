@@ -8,6 +8,7 @@ var BusBooking = /** @class */ (function () {
         return "Ticket booked for ".concat(passengerName, " on bus ").concat(busId, ".");
     };
     // Function to book multiple tickets using rest parameters
+    
     BusBooking.prototype.bookMultipleTickets = function (busId) {
         var _this = this;
         var passengerNames = [];

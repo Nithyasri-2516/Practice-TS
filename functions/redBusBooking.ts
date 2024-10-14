@@ -25,6 +25,7 @@ class BusBooking {
     bookTicketWithDefaultSeat(busId: number, passengerName: string, seatNumber: number = 1): string {
         return `Ticket booked for ${passengerName} on bus ${busId}, seat ${seatNumber}.`;
     }
+    
 }
 
 // Usage
